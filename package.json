@@ -1,0 +1,24 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "belajar rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaiinhs/restapi.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "zain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaiinhs/restapi/issues"
+  },
+  "homepage": "https://github.com/zaiinhs/restapi#readme"
+}
