@@ -2,6 +2,7 @@
 
 var response = require('./res');
 var connection = require('./koneksi');
+const conn = require('./koneksi');
 
 exports.index = function (req, res) {
     response.ok("Aplikasi berjalan", res)
@@ -61,6 +62,19 @@ exports.ubahdata = function (req, res) {
                 console.log(error);
             } else {
                 response.ok('berhasil mengubah data', res)
+            }
+        });
+};
+
+//menghapus data berdasarkan id (delete)
+exports.hapusdata = function (req, res) {
+    var id = req.body.id_mahasiswa;
+    connection.query('DELETE FROM mahasiswa WHERE id_mahasiswa=?', [id],
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Data berhasil di hapus", res);
             }
         });
 };
