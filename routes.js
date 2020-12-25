@@ -19,4 +19,6 @@ module.exports = function (app) {
         .put(jsonku.ubahdata);
     app.route('/hapus')
         .delete(jsonku.hapusdata);
+    app.route('/tampilmatakuliah')
+        .get(jsonku.tampilgroupmatakuliah);
 }
